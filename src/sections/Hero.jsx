@@ -6,6 +6,7 @@ import {
   Linkedin,
   Twitter,
   Download,
+  Newspaper,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
@@ -135,6 +136,7 @@ export const Hero = () => {
                 { icon: Github, href: "https://github.com/sdeashirvad" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/sdeashirvad/" },
                 { icon: Twitter, href: "https://x.com/sdeashirvad" },
+                { icon: Newspaper, href: "https://sdeashirvad.medium.com/" },
               ].map((social, idx) => (
                 <a
                   key={idx}

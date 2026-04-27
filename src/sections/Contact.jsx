@@ -5,6 +5,7 @@ import {
   Send,
   CheckCircle,
   AlertCircle,
+  Newspaper,
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { useState } from "react";
@@ -28,6 +29,12 @@ const contactInfo = [
     label: "Location",
     value: "Bengaluru, India",
     href: "#",
+  },
+  {
+    icon: Newspaper,
+    label: "Medium",
+    value: "sdeashirvad.medium.com",
+    href: "https://sdeashirvad.medium.com/",
   },
 ];
 

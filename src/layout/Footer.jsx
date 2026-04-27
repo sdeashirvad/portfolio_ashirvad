@@ -1,9 +1,10 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter, Heart, Newspaper } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/sdeashirvad", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/sdeashirvad/", label: "LinkedIn" },
   { icon: Twitter, href: "https://x.com/sdeashirvad", label: "Twitter" },
+  { icon: Newspaper, href: "https://sdeashirvad.medium.com/", label: "Medium" },
 ];
 
 const footerLinks = [

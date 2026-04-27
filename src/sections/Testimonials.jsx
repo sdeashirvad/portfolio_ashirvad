@@ -4,7 +4,7 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Ashirvad is an excellent engineer with sharp problem-solving skills and a strong grasp of backend architecture. He consistently delivers clean, well-structured code and drives effective technical communication across the team, taking high ownership throughout the entire development lifecycle.",
+      "Ashirvad is the kind of backend engineer you trust with your most critical systems. He picks up unfamiliar tech stacks incredibly fast, immediately contributing production-ready code. When he owns a service, I know it will be delivered robustly with zero handholding.",
     author: "Ajay Gahalot",
     role: "Principal Engineer",
     avatar:
