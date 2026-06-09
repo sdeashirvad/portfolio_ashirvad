@@ -1,10 +1,31 @@
-import { Github, Linkedin, Twitter, Heart, Newspaper } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Newspaper,
+} from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/sdeashirvad", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/sdeashirvad/", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/sdeashirvad", label: "Twitter" },
-  { icon: Newspaper, href: "https://sdeashirvad.medium.com/", label: "Medium" },
+  {
+    icon: Github,
+    href: "https://github.com/sdeashirvad",
+    label: "GitHub",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/sdeashirvad/",
+    label: "LinkedIn",
+  },
+  {
+    icon: Twitter,
+    href: "https://x.com/sdeashirvad",
+    label: "X / Twitter",
+  },
+  {
+    icon: Newspaper,
+    href: "https://sdeashirvad.medium.com/",
+    label: "Medium",
+  },
 ];
 
 const footerLinks = [
@@ -18,21 +39,36 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-border">
+    <footer
+      className="py-12 border-t border-border"
+      aria-label="Footer"
+    >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logo & Copyright */}
+
+          {/* Brand / Identity */}
           <div className="text-center md:text-left">
-            <a href="#" className="text-xl font-bold tracking-tight">
+            <a
+              href="/"
+              aria-label="Ashirvad Kumar Pandey Homepage"
+              className="text-xl font-bold tracking-tight"
+            >
               AKP<span className="text-primary">.</span>
             </a>
+
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Ashirvad. All rights reserved.
-            </p>
+                © {currentYear} SDEAshirvad Labs
+                </p>
+            <p className="text-xs text-muted-foreground/80 mt-1">
+             Ashirvad Kumar Pandey (sdeashirvad)
+             </p>
           </div>
 
-          {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-6">
+          {/* Navigation */}
+          <nav
+            className="flex flex-wrap justify-center gap-6"
+            aria-label="Footer Navigation"
+          >
             {footerLinks.map((link) => (
               <a
                 key={link.href}
@@ -45,19 +81,24 @@ export const Footer = () => {
           </nav>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div
+            className="flex items-center gap-4"
+            aria-label="Social Links"
+          >
             {socialLinks.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >
                 <social.icon className="w-5 h-5" />
               </a>
             ))}
           </div>
+
         </div>
       </div>
     </footer>
